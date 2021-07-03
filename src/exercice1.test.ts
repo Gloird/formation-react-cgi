@@ -20,14 +20,10 @@ describe("Exercice 1", () => {
 
   test("Tout les noms des films trié par ordre de sortie sans les films d'animation", () => {
     //Recherche le code pour le genre Animation
-    const animation = DATA_GENRES.genres.find(
-      (genre) => genre.name === "Animation"
-    );
+    const animation = undefined;
 
     //Rechercher tout les films qui ne contienne pas le genre animation {animation.id}
-    const films = DATA_FILMS.results.filter(
-      (film) => !film.genre_ids.includes(animation.id)
-    );
+    const films = undefined;
 
     // Trié sur la date ( Utilisation de Date.parse pour convertir notre date qui est en {string} en un nombre )
     const filmsTrie = films.sort(
@@ -60,18 +56,14 @@ describe("Exercice 1", () => {
   });
 
   test("Existe il un film LEGO", () => {
-    const fileLego = DATA_FILMS.results.some((film) =>
-      /lego/gi.test(film.title)
-    );
+    const fileLego = undefined;
 
     //Résulat
     expect(fileLego).toBeTruthy();
   });
 
   test("Trouvé tout les films sans backdrop", () => {
-    const fileSansBackdrop = DATA_FILMS.results.filter(
-      (film) => !film.backdrop_path
-    );
+    const fileSansBackdrop = undefined;
 
     //Résulat
     expect(fileSansBackdrop).toHaveLength(3);

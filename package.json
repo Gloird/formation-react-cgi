@@ -1,0 +1,27 @@
+{
+  "name": "formation-react-cgi",
+  "version": "1.0.0",
+  "description": "formation-react-cgi",
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gloird/formation-react-cgi.git"
+  },
+  "author": "gloird <nicolas86200@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gloird/formation-react-cgi/issues"
+  },
+  "homepage": "https://github.com/Gloird/formation-react-cgi#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6"
+  }
+}

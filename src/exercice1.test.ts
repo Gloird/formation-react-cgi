@@ -5,14 +5,10 @@ import DATA_FILMS from "../data/movie.json";
 describe("Exercice 1", () => {
   test("Trouvé tout les films d'animation", () => {
     //Recherche le code pour le genre Animation
-    const animation = DATA_GENRES.genres.find(
-      (genre) => genre.name === "Animation"
-    );
+    const animation = DATA_GENRES.genres;
 
     //Rechercher tout les films qui contienne le genre animation {animation.code}
-    const filmsAnimation = DATA_FILMS.results.filter((film) =>
-      film.genre_ids.includes(animation.id)
-    );
+    const filmsAnimation = DATA_FILMS.results;
 
     //Résulat
     expect(filmsAnimation).toHaveLength(5);
@@ -32,7 +28,7 @@ describe("Exercice 1", () => {
     );
 
     // Récuperer les titres
-    const titreFilmsTrie = filmsTrie.map((film) => film.title);
+    const titreFilmsTrie = filmsTrie;
 
     //Résulat
     expect(titreFilmsTrie).toHaveLength(15);

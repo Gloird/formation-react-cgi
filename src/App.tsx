@@ -1,17 +1,20 @@
 import React from "react";
-import "./App.css";
-import Button from "./components/Button/button";
+import { BrowserRouter } from "react-router-dom";
+import "./assets/css/style.css";
+import AppContextProvider from "./contexts/appContext/appContext";
+import Header from "./parts/Header/header";
+import Routes from "./routes/routes";
 
 function App() {
   return (
-    <div className="App">
-      <Button
-        texte="TOTO"
-        couleurBordure="#123"
-        couleurFond="red"
-        couleurTexte="yellow"
-      />
-    </div>
+    <BrowserRouter>
+      <AppContextProvider>
+        <div id="app">
+          <Header />
+          <Routes />
+        </div>
+      </AppContextProvider>
+    </BrowserRouter>
   );
 }
 

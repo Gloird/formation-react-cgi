@@ -1,0 +1,131 @@
+body {
+  background-color: #000;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#root {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40vh;
+}
+
+#clap {
+  height: 50px;
+  width: 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#headerSearch {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchResult {
+  display: flex;
+  font-size: larger;
+}
+
+.searchResult:hover {
+  background-color: rgb(13, 126, 219);
+}
+
+#searchResults {
+  overflow-x: hidden;
+  display: block;
+  position: absolute;
+  margin-top: 22px;
+  width: 330px;
+  height: 300px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.829);
+}
+
+#search {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+}
+
+#searchInput {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  height: 25px;
+  color: #fff;
+  font-size: larger;
+}
+
+#searchInput:hover,
+#searchInput:target,
+#searchInput:focus-within,
+#searchInput:active,
+#searchInput:focus {
+  outline: 0;
+  background-color: transparent;
+}
+
+#fiche {
+  display: flex;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: rgba(0, 0, 0, 0.486);
+  width: 100%;
+  border-radius: 5px;
+}
+
+#ficheInfos {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
+}
+
+#fichePoster > img {
+  height: 100%;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+#ficheDetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#ficheDetail > article {
+  margin: 0 15px;
+}

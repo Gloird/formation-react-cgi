@@ -5,7 +5,6 @@ interface Props {
   couleurFond?: string;
   couleurTexte?: string;
   couleurBordure?: string;
-  onClick?: () => void;
 }
 
 class Button extends Component<Props> {
@@ -18,7 +17,6 @@ class Button extends Component<Props> {
           border: "1px solid",
           borderColor: this.props.couleurBordure,
         }}
-        onClick={this.props.onClick}
       >
         {this.props.texte}
       </button>

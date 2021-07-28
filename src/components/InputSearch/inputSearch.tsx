@@ -2,18 +2,7 @@ import React, { FC, FormEvent, useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import useApi from "../../hooks/UseApi/useApi";
 
-export interface InputSearchProps {
-  /**
-   * Evenement qui sera appeler a la selection d'un resultat
-   */
-  onSelected?: (event: FormEvent<HTMLInputElement>) => void;
-  /**
-   * Texte indicatif par défaut
-   */
-  placeholder?: string;
-}
-
-const InputSearch: FC<InputSearchProps> = ({ onSelected, placeholder }) => {
+const InputSearch: FC = () => {
   const [value, setvalue] = useState<string | undefined>(undefined);
   const [results, setresults] = useState<TMDB.Result[]>([]);
   const { push } = useHistory();
@@ -47,7 +36,7 @@ const InputSearch: FC<InputSearchProps> = ({ onSelected, placeholder }) => {
         onClick={fetchData}
         type="search"
         onChange={handlerInput}
-        placeholder={placeholder}
+        placeholder="Recherche"
         value={value}
         id="searchInput"
       ></input>

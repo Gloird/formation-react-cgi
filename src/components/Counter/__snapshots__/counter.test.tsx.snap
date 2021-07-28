@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter snapshot pour le composant Counter 1`] = `
+<body>
+  <div>
+    <div>
+      <button
+        style="border: 1px solid;"
+      >
+        +1
+      </button>
+      0
+      <button
+        style="border: 1px solid;"
+      >
+        -1
+      </button>
+    </div>
+  </div>
+</body>
+`;

@@ -5,12 +5,10 @@ interface Props {
   couleurFond?: string;
   couleurTexte?: string;
   couleurBordure?: string;
+  onClick?: () => void;
 }
-interface State {}
 
-class Button extends Component<Props, State> {
-  state = {};
-
+class Button extends Component<Props> {
   render() {
     return (
       <button
@@ -20,6 +18,7 @@ class Button extends Component<Props, State> {
           border: "1px solid",
           borderColor: this.props.couleurBordure,
         }}
+        onClick={this.props.onClick}
       >
         {this.props.texte}
       </button>

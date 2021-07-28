@@ -1,4 +1,4 @@
-import { render } from "@testing-library/react";
+import { fireEvent, render } from "@testing-library/react";
 import Button from "./button";
 
 describe("Button", () => {
@@ -57,6 +57,20 @@ describe("Button", () => {
       border: "1px solid",
       borderColor: "#B8A637",
     });
+  });
+
+  test("Click", () => {
+    const mockClick = jest.fn();
+    const renderButton = render(
+      <Button texte="Mon texte" onClick={mockClick} />
+    );
+    //Bouton est il dans le dom
+    expect(renderButton.getByRole("button")).toBeInTheDocument();
+    //Bouton contien bien le texte «Mon texte»
+    expect(renderButton.getByRole("button")).toHaveTextContent("Mon texte");
+    //Clique sur le bouton
+    fireEvent.click(renderButton.getByRole("button"));
+    expect(mockClick).toBeCalled();
   });
 
   test("Snapshot Button", () => {

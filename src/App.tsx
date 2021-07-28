@@ -1,15 +1,11 @@
 import React from "react";
 import "./App.css";
-import Button from "./components/Button/button";
+import Counter from "./components/Counter/counter";
 
 function App() {
   return (
     <div className="App">
-      <Button
-        texte="TOTO"
-        couleurBordure="#123"
-        couleurFond="red"
-        couleurTexte="yellow"
+      <Counter
       />
     </div>
   );

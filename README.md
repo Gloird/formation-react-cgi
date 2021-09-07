@@ -1,7 +1,9 @@
 # Formation ReactJS
 
-Crée un projet ReactJS (TypeScript)
+Création d’une application de recherche de film et série
 
-1- Initialisé un projet react en Typescript : `npx create-react-app . --template typescript`
+Nous allons créer ensemble une application de recherche de film et de série.
 
-2- Lancer le projet : `npm start`
+Voici le résultat attendu :
+
+![App](capture-app.PNG)

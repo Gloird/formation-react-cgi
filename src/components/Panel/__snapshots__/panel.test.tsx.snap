@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel Snapshot Panel 1`] = `
+<body>
+  <div>
+    <div>
+      <span>
+        Titre du panel
+      </span>
+    </div>
+  </div>
+</body>
+`;

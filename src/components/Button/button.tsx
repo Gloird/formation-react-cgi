@@ -1,9 +1,21 @@
 import React, { Component } from "react";
 
 interface Props {
+  /**
+   * Texte du bouton
+   */
   texte: string;
+  /**
+   * Couleur de fond du bouton
+   */
   couleurFond?: string;
+  /**
+   * Couleur du texte du bouton
+   */
   couleurTexte?: string;
+  /**
+   * Couleur de la bordure du bouton
+   */
   couleurBordure?: string;
 }
 interface State {}
